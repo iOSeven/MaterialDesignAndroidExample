@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="loginTitle">LOGIN</string>
+    <string name="txtHintCorreo">Correo</string>
+    <string name="txtHintPassword">Password</string>
+    <string name="btnTextLogin">Iniciar Sesion</string>
+</resources>
