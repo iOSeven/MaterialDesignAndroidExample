@@ -14,6 +14,10 @@ import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Varianles de entorno
+    //Instancia de la clase manager de la base de datos
+    DataBaseManager manager;
+
     //Definimos variables para enlazar los elementos del layout con el codigo para acceder a sus propiedades
     EditText txtCorreo, txtPassword;
     Button btnIngresar;
@@ -26,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);//Esta linea enlaza el codigo con el layout
+
+        //Instanciar clase Manager
+        manager = new DataBaseManager(this);
 
         //Enlazamos nuestras cajas de texto
         txtCorreo = (EditText) findViewById(R.id.txtCorreo);
